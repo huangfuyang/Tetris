@@ -1,0 +1,82 @@
+﻿<Window x:Class="Tetris.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="俄罗斯方块" Height="439" Width="456" Background="#FF43484C" BorderBrush="#FF43484C" OpacityMask="Cyan" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Initialized="Window_Initialized" KeyDown="Window_KeyDown">
+    <Grid>
+        <DockPanel Margin="-3,1,117,0" Width="320" Height="400">
+            <DockPanel.Background>
+                <ImageBrush ImageSource="block\8.gif" Viewport="0,0,0.05,0.04" TileMode="Tile" Stretch="Fill">
+                </ImageBrush>
+            </DockPanel.Background>
+                <Grid Name="gridMaster" Background="#FF43484C" Width="192" Height="288">
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+            </Grid>
+        </DockPanel>
+        <Grid Height="64" Width="64" HorizontalAlignment="Right" Margin="0,19.555,26,0" Name="gridBlock1" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Label Height="28" HorizontalAlignment="Right" Margin="0,0,-9,101.556" Name="labLevel" VerticalAlignment="Bottom" Width="120" Foreground="AntiqueWhite">Level:</Label>
+        <Grid Margin="0,108.444,26,0" Name="gridBlock2" Height="64" HorizontalAlignment="Right" VerticalAlignment="Top" Width="64">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Label Foreground="AntiqueWhite" HorizontalAlignment="Right" Margin="0,0,-9,169.667" Name="labPoint" Width="120" Height="28" VerticalAlignment="Bottom">Point:</Label>
+        <Label Foreground="AntiqueWhite" Height="28" HorizontalAlignment="Right" Margin="0,0,-9,135.667" Name="labRow" VerticalAlignment="Bottom" Width="120">Row:</Label>
+        <Label Height="26.146" HorizontalAlignment="Right" Margin="0,0,12.264,75.41" Name="label4" VerticalAlignment="Bottom" Width="98.736" Foreground="AntiqueWhite">F2 [NewGame]</Label>
+    </Grid>
+</Window>
